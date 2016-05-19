@@ -10,8 +10,8 @@ Descripción
 Descripción de los directorios:
   * **config:** Directorio que contiene un archivo ENV con la configuración del servicio,
              parámetros importantes a configurar son (Host, Port, Template_name).
-  * **statics:** Directorio donde se almacenaran los contenidos estáticos como css, js, img.
-  * **templates:** Directorio donde se almacenaran los templates.
+  * **Public:** Directorio donde se almacenaran los contenidos estáticos (css, js, images) y los templates.
+  * **Testing:** Directorio donde se almacenaran los contenidos estáticos (css, js, images) y los templates de prueba.
  
 Archivo de Configuración config.env
 -----------------------------------
@@ -60,15 +60,15 @@ pero en tu archivo etc/host debes hacer que redireccione a la ip de tu docker-ma
 Directorio donde se encuentran almacenado el template, dentro del proyecto hay un directorio llamado Public donde debe estar todo el contenido.
 
 **TEMPLATE_NAME:**
-Es el nombre de la plantilla que se utilizara, este nombre se define con el formato de plantillas golang.
+Nombre de la plantilla que se utilizara, este nombre se define con el formato de plantillas golang.
 > **Nombre de Template para Testing:** Mantenimiento
  
 **STATIC_ROUTE:**
-Esta es el nombre de la ruta que se configurara en el servidor para servir todos los contenidos estaticos.
+Nombre de la ruta que se configurara en el servidor para los contenidos estaticos.
 > El tempate html debe llamar a los contenidos estaticos teniendo en cuenta el nombre de la ruta.
 
 **STATIC_DIR:**
-Esta es la ruta donde esta el directorio que contiene los contenidos estaticos.
+Ruta Del directorio que contiene los contenidos estaticos.
 
 Requerimientos del servicio
 ---------------------------
