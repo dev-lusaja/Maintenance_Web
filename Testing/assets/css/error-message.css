@@ -1,0 +1,153 @@
+/*------------------------------------*\
+  HTML MEYER'S RESET
+  http://goo.gl/uOX9r
+\*------------------------------------*/
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed,
+    figure, figcaption, footer, header, hgroup,
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    html {
+    	height: 100%;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section
+    {
+      display: block;
+    }
+    body              { line-height: 1; }
+    ol, ul            { list-style: none; }
+    blockquote, q     { quotes: none; }
+    blockquote:before,
+    blockquote:after,
+    q:before, q:after { content: ''; content: none; }
+    table             { border-collapse: collapse; border-spacing: 0; }
+    body * {
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: content-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: border-box
+    box-sizing: content-box
+    -webkit-box-sizing:border-box; /* Safari */
+    -webkit-font-smoothing: antialiased !important;
+    }
+    
+    .social {
+        margin: 1em;
+    }
+
+    .social a {
+        display: inline-block;
+        opacity: 0.8;
+    }
+    
+    .social a:hover {
+        opacity: 1;
+    }
+
+    .not-found, .overloaded {
+    	
+    	background-size: cover;
+    	background-repeat: no-repeat;
+    	background-position: top center;
+    }
+    
+    .maintain,
+    .not-found {
+    	background-image: url(/assets/images/mantenimiento.jpg);
+    }
+    
+    .overloaded {
+    	background-image: url(/assets/images/mantenimiento.jpg);
+    }
+    
+    .not-found section,
+    .overloaded section
+     {
+    	width: 410px;
+    	font-size: 20px;
+    	margin: 10% auto;
+    	color: white;
+    	position: relative;
+    	font: bold 24px/24px 'Cantora One', sans-serif;
+    	text-align: center;
+    	text-shadow: 0 1px 3px rgba(0,0,0,0.9);
+    }
+    
+    .not-found section {
+    	left: 18%;
+    }
+    
+    .overloaded section {
+    	left: 4%; 
+    	margin: 25% auto; 
+    }
+    
+    .not-found section h1, .overloaded section h1 {
+ 		font-size: 125%;
+ 		letter-spacing: 0.05em;
+ 		line-height: 1.5;
+ 		margin-top: 30px;
+    }
+    
+    .not-found:before, .overloaded:before {
+    	content: '';
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-repeat: repeat-x;
+    	background-image: -webkit-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+    	background-image: -moz-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+    	background-image: -ms-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+    	background-image: -o-linear-gradient(bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+    	background-image: linear-gradient(to top,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%);
+    }
+    
+    .page-404 {
+    	padding: 20px;
+    	margin-bottom: 28px;
+    }
+    
+    .author-picture {
+    	position: absolute;
+    	right: 0;
+    	bottom: 0;
+    	padding: 5px;
+    	color: white;
+    	font-size: 11px;
+    	font-family: 'Open Sans', sans-serif;
+    }
+    
+    .author-picture a {
+    	text-decoration: none;
+    	color: white;
+    	border-bottom: 1px dotted #ccc;
+    }
+ 
+    @media screen and (max-width: 480px) {
+    
+    .not-found section,
+    .overloaded section {
+    	left: 0;
+    }
+    
+    }		
+    
