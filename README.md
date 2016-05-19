@@ -82,7 +82,7 @@ Ejecución del servicio
 
   * **Primer paso:** clonar dentro de la carpeta "src/" el proyecto:
 ~~~
-  > git clone https://git.yachay.pe/osanchezj/ms-portals-maintenance.git
+  > git clone https://github.com/dev-lusaja/Maintenance_Web
 ~~~~
 
   * **Segundo paso:** 
