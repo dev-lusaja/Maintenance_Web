@@ -1,6 +1,8 @@
 maintenance_service:
   build: .
   env_file: config/config.env
+  environment:
+    - MAINTENANCE_PORT=${PORT}
   working_dir: /go/src/maintenance_service
   command: go run maintenance.go
   ports:

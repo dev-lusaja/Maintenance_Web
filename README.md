@@ -34,7 +34,6 @@ Testing
 Ejemplo de Configuración para testing
 
 ~~~ENV
-  MAINTENANCE_PORT=9090
   RETRY_TIME=3600
   HOST=testmaintenance.dev
   TEMPLATE_DIR=Testing/templates/
@@ -42,9 +41,6 @@ Ejemplo de Configuración para testing
   STATIC_ROUTE=/assets/
   STATIC_DIR=./Testing/assets/
 ~~~
-
-**MAINTENANCE_PORT:**
-Es el puerto donde estara escuchando la aplicación
 
 **RETRY_TIME:**
 Tiempo de reintento para los robots
@@ -92,7 +88,7 @@ Ejecución del servicio
   > PORT=<port> docker-compose up -d
  ~~~ 
   > El comando "docker-compose up -d" descargara la imagen de golang, creara el contenedor y lo iniciara.
- > Se le pasa una variable de entorno llamada PORT, esta variable debe tener el mismo numero de puerto que se configuro en el archivo .ENV
+ > Se le pasa una variable de entorno llamada PORT la cual es el puerto donde estara escuchando la aplicación
  
   * **Tercer paso:** Ingresar desde tu navegador al servicio indicando el puerto 
 ~~~
